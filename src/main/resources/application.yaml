@@ -18,13 +18,6 @@ spring:
           username: ${CONFIG_SERVICE_GIT_URI_USERNAME}
           password: ${CONFIG_SERVICE_GIT_URI_PASSWORD}
 
-eureka:
-  client:
-    region: default
-    registryFetchIntervalSeconds: 20
-    serviceUrl:
-      defaultZone: http://${DISCOVERY_SERVICE_SECURITY_USERNAME}:${DISCOVERY_SERVICE_SECURITY_PASSWORD}@${APP_HOST}:${DISCOVERY_SERVICE_PORT}/${DISCOVERY_SERVICE_CONTEXT_PATH}/eureka/
-
 server:
   port: ${CONFIG_SERVICE_PORT}
   servlet:
